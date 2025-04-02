@@ -46,8 +46,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -474,9 +474,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Confluent" class="md-nav__button md-logo" aria-label="Confluent" data-md-component="logo">
       
@@ -4457,6 +4455,24 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -4501,7 +4517,7 @@ data by allowing confluent, but not other users to read the information</p>
 <h1 id="content-in-varlibconfluentprivate">Content in /var/lib/confluent/private/<a class="headerlink" href="#content-in-varlibconfluentprivate" title="Permanent link">&para;</a></h1>
 <p>The confluent api offers material in /var/lib/confluent/private to nodes that authenticate using their node api key. For example, confluent uses
 this facility to provide the encryption key for encrypted diskless images and disk cloning. Custom scripts may use this facility. For example, if wanting to provide some sort of /etc/shadow entry for an account using the private facility:
-- Place hash of password in private file (substituting [os-profile] for the os profile that you specify in <code>nodedeploy</code>): `echo '<span class="arithmatex">\(5\)</span>ssdUjvVexCw50Nvc$5uQMDLlikaiZKsTt4.8Xmlmr/O7qNXTrlBgnc20CQb7' &gt; /var/lib/confluent/private/os/[profilename]/pending/someaccount.passwd'
+- Place hash of password in private file (substituting [os-profile] for the os profile that you specify in <code>nodedeploy</code>): `echo '$5$ssdUjvVexCw50Nvc$5uQMDLlikaiZKsTt4.8Xmlmr/O7qNXTrlBgnc20CQb7' &gt; /var/lib/confluent/private/os/[profilename]/pending/someaccount.passwd'
 - When in place, the client may access it either full time if diskless or prior to the conclusion of post by doing:
 <div class="highlight"><pre><span></span><code># python3 /opt/confluent/bin/apiclient /confluent-api/self/profileprivate/pending/someaccount.passwd &gt; /tmp/mylocalfile  
 # cat /tmp/mylocalfile  
@@ -4648,12 +4664,10 @@ store the decryption keys in the profile private area on the filesystem.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
-    
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "toc.integrate", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>

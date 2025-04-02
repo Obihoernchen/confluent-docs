@@ -46,8 +46,8 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        
+        <link rel="stylesheet" href="../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -474,9 +474,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Confluent" class="md-nav__button md-logo" aria-label="Confluent" data-md-component="logo">
       
@@ -4773,6 +4771,318 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-remote-usage-over-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enabling remote usage over HTTP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-python-to-access-the-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using python to access the API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accessing-nodes-nodes-and-noderange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing Nodes: /nodes/ and /noderange/
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accessing Nodes: /nodes/ and /noderange/">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      /nodes/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noderangenoderange" class="md-nav__link">
+    <span class="md-ellipsis">
+      /noderange/[noderange]/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querying-or-setting-power-state-nodesnodenamepowerstate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Querying or setting power state: /nodes/[nodename]/power/state
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reseat-node-nodesnodenamepowerreseat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reseat node: /nodes/[nodename]/power/reseat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-next-boot-device-nodesnodenamebootnextdevice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting next boot device: /nodes/[nodename]/boot/nextdevice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifying-a-node-nodesnodenameidentify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying a node: /nodes/[nodename]/identify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-hardware-nodesnodenamesensorshardwarecategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring hardware: /nodes/[nodename]/sensors/hardware/[category]/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-a-node-nodesnodenameconfiguration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring a node: /nodes/[nodename]/configuration/
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring a node: /nodes/[nodename]/configuration/">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#managing-system-defined-configuration-nodesnodenameconfigurationsystemall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing system-defined configuration: /nodes/[nodename]/configuration/system/all
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resetting-the-management-controller-nodesnodenameconfigurationmanagement_controllerreset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resetting the management controller: /nodes/[nodename]/configuration/management_controller/reset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-user-accounts-on-the-management-controller-nodesnodenameconfigurationmanagement_controllerusers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing user accounts on the management controller: /nodes/[nodename]/configuration/management_controller/users/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-ntp-nodesnodenameconfigurationmanagement_controllerntpargument" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring NTP: /nodes/[nodename]/configuration/management_controller/ntp/[argument]/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-alert-destinations-nodesnodenameconfigurationmanagement_controlleralertsdestinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing alert destinations: /nodes/[nodename]/configuration/management_controller/alerts/destinations/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-host-name-used-by-management-controller-nodesnodenameconfigurationmanagement_controlleridentifier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing host name used by management controller: /nodes/[nodename]/configuration/management_controller/identifier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manage-bmc-domain-name-nodesnodenameconfigurationmanagement_controllerdomain_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage BMC domain name: /nodes/[nodename]/configuration/management_controller/domain_name/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-ip-configuration-nodesnodenameconfigurationmanagement_controllernet_interfacesmanagement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing IP configuration: /nodes/[nodename]/configuration/management_controller/net_interfaces/management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-shell-session-nodesnodenameshellsessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running a shell session: /nodes/[nodename]/shell/sessions/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-console-session-nodesnodenameconsolesession" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running a console session: /nodes/[nodename]/console/session
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-availability-of-licensed-functionality-nodesnodenameconsolelicense" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing availability of licensed functionality: /nodes/[nodename]/console/license
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-and-setting-node-attributes-nodesnodenameattributesgroup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing and setting node attributes: /nodes/[nodename]/attributes/[group]/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-hardware-health-nodesnodenamehealthhardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing hardware health: /nodes/[nodename]/health/hardware
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-hardware-information-nodesnodenameinventoryhardwarecategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing hardware information: /nodes/[nodename]/inventory/hardware/[category]/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-firmware-information-nodesnodenameinventoryfirmwarecategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing firmware information: /nodes/[nodename]/inventory/firmware/[category]/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-log-of-hardware-events-nodesnodenameeventshardwarelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing log of hardware events: /nodes/[nodename]/events/hardware/log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoding-alert-data-nodesnodenameeventshardwaredecode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoding alert data: /nodes/[nodename]/events/hardware/decode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#managing-physical-and-virtual-media-nodesnodenamemediaargument" class="md-nav__link">
+    <span class="md-ellipsis">
+      Managing physical and virtual media: /nodes/[nodename]/media/[argument]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -5306,12 +5616,10 @@ IPMI source.  TODO: Document this further                  </p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
-    
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "toc.integrate", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "content.tooltips", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
