@@ -16,7 +16,7 @@
       
       
       
-        <link rel="next" href="getting_started/configureconfluent/">
+        <link rel="next" href="getting_started/confluentquickstart_el8/">
       
       
       <link rel="icon" href="assets/icon.png">
@@ -259,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="getting_started/configureconfluent/" class="md-tabs__link">
+        <a href="getting_started/confluentquickstart_el8/" class="md-tabs__link">
           
   
   
@@ -658,12 +658,12 @@
   
   
     <li class="md-nav__item">
-      <a href="getting_started/configureconfluent/" class="md-nav__link">
+      <a href="getting_started/confluentquickstart_el8/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Configuring confluent
+    Confluent quickstart
     
   </span>
   
@@ -704,12 +704,81 @@
   
   
     <li class="md-nav__item">
-      <a href="getting_started/confluentquickstart_el8/" class="md-nav__link">
+      <a href="getting_started/installconfluent_rhel/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Confluent quickstart
+    Confluent Installation for Red Hat Enterprise Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting_started/installconfluent_ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confluent Installation for Ubuntu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting_started/installconfluent_suse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confluent Installation for SUSE Linux Enterprise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting_started/configureconfluent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuring confluent
     
   </span>
   
@@ -756,75 +825,6 @@
   
   <span class="md-ellipsis">
     InfiniBand install with confluent on SLE 15.2
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="getting_started/installconfluent_rhel/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Confluent Installation for Red Hat Enterprise Linux
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="getting_started/installconfluent_suse/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Confluent Installation for SUSE Linux Enterprise
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="getting_started/installconfluent_ubuntu/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Confluent Installation for Ubuntu
     
   </span>
   
@@ -4558,7 +4558,8 @@ server configurations. It incorporates a variety of functions relevant to that e
 </ul>
 </li>
 <li>OS Deployment including:<ul>
-<li>Sample profiles for ESXi 6.7/7.0, RedHat/CentOS 7.x/8.x, SuSE 15.x, RHV-H 4.&frac34;.4 and Ubuntu 20.04</li>
+<li>Stateless images and stateful OS deployment</li>
+<li>Sample profiles for ESXi 6.7/7.0, RedHat/CentOS/Alma/Rocky 7.x/8.x/9.x, SuSE 15.x, RHV-H 4.&frac34;.4 and Ubuntu 20.04/22.04/24.04</li>
 <li>Deployment over PXE, HTTP(S)boot, or removable media (real or virtual)</li>
 <li>Does not require a DHCP server, nor does it conflict with an external DHCP server for all deployment methods</li>
 <li>Support customization during phases of deployment (e.g. post, firstboot, onboot) by local commands or automatically launched remote ansible playbooks.</li>
@@ -4599,9 +4600,11 @@ server configurations. It incorporates a variety of functions relevant to that e
 </li>
 </ul>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>Generally speaking, there are two suggested approaches:
-* Using confluent - It is now recommended for most of those without existing xCAT installations to use confluent directly.
-* Using xCAT and confluent together - When you are used to xCAT or need stateless deployment or another currently xCAT exclusive feature and want to use it in conjunction with confluent.  For this situation, start with the xCAT documentation under Advanced topics.</p>
+<p>Generally speaking, there are two suggested approaches:</p>
+<ul>
+<li>Using confluent - It is strongly recommended for most of those without existing xCAT installations to use confluent directly.</li>
+<li>Using xCAT and confluent together (not recommended) - When you are used to xCAT or another currently xCAT exclusive feature and want to use it in conjunction with confluent.  For this situation, start with the xCAT documentation under Advanced topics.</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For specific topics, it may be easier to use the Search function of this site.</p>
@@ -4628,7 +4631,7 @@ server configurations. It incorporates a variety of functions relevant to that e
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="March 5, 2025 16:03:16"><span class="timeago" datetime="2025-03-05T16:03:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="March 5, 2025 16:03:16">2025-03-05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="April 2, 2025 01:11:54"><span class="timeago" datetime="2025-04-02T01:11:54+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="April 2, 2025 01:11:54">2025-04-02</span>
   </span>
 
     
@@ -4674,13 +4677,13 @@ server configurations. It incorporates a variety of functions relevant to that e
         
         
           
-          <a href="getting_started/configureconfluent/" class="md-footer__link md-footer__link--next" aria-label="Next: Configuring confluent">
+          <a href="getting_started/confluentquickstart_el8/" class="md-footer__link md-footer__link--next" aria-label="Next: Confluent quickstart">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Configuring confluent
+                Confluent quickstart
               </div>
             </div>
             <div class="md-footer__button md-icon">
