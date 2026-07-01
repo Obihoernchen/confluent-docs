@@ -13,7 +13,7 @@ copyright: Copyright &copy; Confluent Community
 site_dir: _site
 
 theme:
-  name: material
+  name: materialx
   favicon: assets/icon.png
   #logo:
   features:
@@ -119,8 +119,9 @@ plugins:
   - privacy
   - glightbox
   - awesome-nav
-  - git-revision-date-localized:
+  - document-dates:
       type: timeago
-      enable_creation_date: true
+      position: bottom
+      show_author: false
   - minify:
       minify_html: true

@@ -1,6 +1,6 @@
-mkdocs-material
+mkdocs-materialx
 mkdocs-awesome-nav
-mkdocs-git-revision-date-localized-plugin
+mkdocs-document-dates
 mkdocs-minify-plugin
 mkdocs-glightbox
 mkdocs-rss-plugin
