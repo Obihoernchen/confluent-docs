@@ -23,7 +23,7 @@ regardless of host based authentication state.
 
 ## syncfiles facility
 
-The syncfiles facility allows content from deployment server to be copied to a target node in flexible ways. The source content may be located
+The [syncfiles](../user_reference/syncfiles.md) facility allows content from deployment server to be copied to a target node in flexible ways. The source content may be located
 anywhere on the deployment server, but must be accessible by the `confluent` user, as `confluent` does not run as `root`.  It may be convenient
 to use `sudo -u confluent bash` to examine files for access if you receive errors about inaccessible files. This may be used to convey more sensitive
 data by allowing confluent, but not other users to read the information

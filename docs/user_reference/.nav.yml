@@ -1,5 +1,6 @@
 nav:
   - osdeploy.md
+  - syncfiles.md
   - noderange.md
   - node_attributes.md
   - attributeexpressions.md
